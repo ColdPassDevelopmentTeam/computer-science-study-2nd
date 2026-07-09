@@ -1,0 +1,44 @@
+name: ✅ 주차 세션 준비 (진행자용)
+description: 매주 세션 준비·진행 상황을 추적하는 체크리스트 이슈입니다. 진행자가 주차 시작 시 엽니다.
+title: "[Week X] 주제 — 세션 준비"
+labels: ["session"]
+body:
+  - type: input
+    id: week-info
+    attributes:
+      label: 주차 / 주제 / 일시
+      placeholder: "예: Week 3 / TCP·UDP 전송 계층 / 7월 20일(일) 14:00"
+    validations:
+      required: true
+  - type: input
+    id: roles
+    attributes:
+      label: 역할 배분
+      description: 설명자 2 / 출제 담당 1 / 서기 1
+      placeholder: "설명자: A, B · 출제: C · 서기: D"
+    validations:
+      required: true
+  - type: checkboxes
+    id: before
+    attributes:
+      label: 세션 전 체크리스트
+      options:
+        - label: 범위·역할 공지 (세션 6일 전)
+        - label: 주간 질문 제출 Discussion 오픈
+        - label: 전원 질문 3개 이상 제출 확인 (세션 전날)
+        - label: 심화 트랙 마크다운 커밋 확인 (세션 전날)
+        - label: 출제 담당 — 퀵파이어 8문항 선별 완료
+  - type: checkboxes
+    id: after
+    attributes:
+      label: 세션 후 체크리스트
+      options:
+        - label: questions.md 커밋 (서기)
+        - label: 미해결 질문 → unresolved.md 반영
+        - label: 해결된 질문 Discussion 답변 채택 처리
+        - label: 다음 주 범위·역할 배분 완료
+  - type: textarea
+    id: notes
+    attributes:
+      label: 특이사항 (선택)
+      placeholder: "불참자, 일정 변경, 다음 주 조정 사항 등"

@@ -1,0 +1,40 @@
+name: 📝 문서 오류·보완 제보
+description: 정리 문서의 잘못된 내용, 오탈자, 보완이 필요한 부분을 제보합니다.
+title: "[문서] Week X — 요약"
+labels: ["documentation"]
+body:
+  - type: input
+    id: location
+    attributes:
+      label: 대상 문서
+      description: 어느 문서인가요? (파일 경로 또는 링크)
+      placeholder: "예: week03-network-tcp/자바.md"
+    validations:
+      required: true
+  - type: dropdown
+    id: kind
+    attributes:
+      label: 유형
+      options:
+        - 내용 오류 (사실이 틀림)
+        - 설명 부족 (보완 필요)
+        - 오탈자·형식
+        - 참고 자료 추가 제안
+    validations:
+      required: true
+  - type: textarea
+    id: detail
+    attributes:
+      label: 상세 내용
+      description: 어떤 부분이 어떻게 잘못되었거나 부족한가요? 근거 자료가 있으면 링크를 함께 남겨주세요.
+      placeholder: |
+        예: "TIME_WAIT은 클라이언트에만 생긴다"고 되어 있는데,
+        능동적으로 연결을 종료하는 쪽에 생기는 것이므로 서버에도 발생할 수 있습니다.
+        참고: RFC 9293 ...
+    validations:
+      required: true
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: 수정 제안 (선택)
+      description: 직접 고칠 수 있으면 이 이슈 번호를 달아 PR로 보내주셔도 됩니다.

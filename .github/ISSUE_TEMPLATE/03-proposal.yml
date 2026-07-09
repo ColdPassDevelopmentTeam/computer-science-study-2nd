@@ -1,0 +1,30 @@
+name: 💡 운영 개선 제안
+description: 스터디 진행 방식, 커리큘럼, 규칙에 대한 개선 아이디어를 제안합니다.
+title: "[제안] 요약"
+labels: ["proposal"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: 현재 상황 / 불편한 점
+      placeholder: "예: 퀵파이어 8문항이 15분 안에 다 안 돌아서 매번 시간이 밀립니다."
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: 제안 내용
+      placeholder: "예: 문항을 6개로 줄이거나, 답변 제한을 45초로 단축하는 건 어떨까요?"
+    validations:
+      required: true
+  - type: dropdown
+    id: decision
+    attributes:
+      label: 결정 방식
+      description: 이 제안을 어떻게 결정하면 좋을까요?
+      options:
+        - 다음 세션 클로징 때 5분 논의
+        - Discussion 투표(Poll)로 결정
+        - 진행자 재량으로 바로 반영 가능
+    validations:
+      required: true

@@ -1,0 +1,27 @@
+title: "[Week X] 질문 제출 — 이름"
+labels: ["questions"]
+body:
+  - type: markdown
+    attributes:
+      value: "이번 주 범위에서 **자기가 답 못할 것 같은 질문** 3개 이상을 제출해주세요."
+  - type: input
+    id: week
+    attributes:
+      label: 주차
+      placeholder: "예: Week 3 — TCP/UDP"
+    validations:
+      required: true
+  - type: textarea
+    id: questions
+    attributes:
+      label: 질문 목록 (3개 이상)
+      placeholder: |
+        1. TIME_WAIT이 서버에서 문제가 되는 구체적 상황은?
+        2. ...
+        3. ...
+    validations:
+      required: true
+  - type: textarea
+    id: stuck
+    attributes:
+      label: 공부하다 막힌 부분 (선택)
