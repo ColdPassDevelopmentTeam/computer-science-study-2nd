@@ -1,27 +1,20 @@
-title: "[Week X] 질문 제출 — 이름"
+title: "[질문·토론] 주제"
 labels: ["questions"]
 body:
   - type: markdown
     attributes:
-      value: "이번 주 범위에서 **자기가 답 못할 것 같은 질문** 3개 이상을 제출해주세요."
+      value: "Discussion 작성은 선택입니다. 공부하거나 세션에 참여하면서 함께 이야기하고 싶은 내용이 있을 때 자유롭게 작성해주세요. 사전 작성 의무와 최소 질문 개수는 없습니다."
   - type: input
-    id: week
+    id: topic
     attributes:
-      label: 주차
-      placeholder: "예: Week 3 — TCP/UDP"
-    validations:
-      required: true
+      label: 관련 주차 / 주제 (선택)
+      placeholder: "예: CS 3주차 — 데이터베이스"
   - type: textarea
-    id: questions
+    id: discussion
     attributes:
-      label: 질문 목록 (3개 이상)
+      label: 질문 또는 논의할 내용
       placeholder: |
-        1. TIME_WAIT이 서버에서 문제가 되는 구체적 상황은?
-        2. ...
-        3. ...
+        예: 트랜잭션 격리 수준을 높이면 항상 데이터 정합성이 좋아질까요?
+        이해한 내용, 막힌 부분 또는 함께 확인할 자료를 자유롭게 적어주세요.
     validations:
       required: true
-  - type: textarea
-    id: stuck
-    attributes:
-      label: 공부하다 막힌 부분 (선택)

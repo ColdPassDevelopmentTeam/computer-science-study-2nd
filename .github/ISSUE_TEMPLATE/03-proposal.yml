@@ -7,14 +7,14 @@ body:
     id: problem
     attributes:
       label: 현재 상황 / 불편한 점
-      placeholder: "예: 퀵파이어 8문항이 15분 안에 다 안 돌아서 매번 시간이 밀립니다."
+      placeholder: "예: 한 세션에서 다루는 주제가 많아 충분히 논의하기 어렵습니다."
     validations:
       required: true
   - type: textarea
     id: proposal
     attributes:
       label: 제안 내용
-      placeholder: "예: 문항을 6개로 줄이거나, 답변 제한을 45초로 단축하는 건 어떨까요?"
+      placeholder: "예: 핵심 주제를 줄이고 남은 내용은 참고 범위로 옮기는 건 어떨까요?"
     validations:
       required: true
   - type: dropdown
@@ -25,6 +25,6 @@ body:
       options:
         - 다음 세션 클로징 때 5분 논의
         - Discussion 투표(Poll)로 결정
-        - 진행자 재량으로 바로 반영 가능
+        - 운영자 재량으로 바로 반영 가능
     validations:
       required: true

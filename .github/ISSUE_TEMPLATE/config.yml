@@ -1,5 +1,5 @@
 blank_issues_enabled: false
 contact_links:
-  - name: 💬 CS 질문 제출 / 토론
+  - name: 💬 질문 / 토론
     url: https://github.com/ColdPassDevelopmentTeam/computer-science-study-2nd/discussions
-    about: 개념 질문, 주간 질문 제출, 자유 토론은 Issues가 아니라 Discussions에서 해주세요.
+    about: 개념 질문이나 함께 논의할 내용은 Discussions에서 자유롭게 공유해주세요.
