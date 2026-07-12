@@ -1,0 +1,13 @@
+name: 💡 건의사항
+description: 커리큘럼이나 스터디 운영에 대한 개선 의견을 남겨주세요.
+title: "[건의] 요약"
+labels: ["proposal"]
+body:
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: 건의 내용
+      description: 바꾸면 좋을 내용과 이유를 간단히 적어주세요.
+      placeholder: "예: 한 주의 필수 키워드를 5개에서 4개로 줄이면 좋겠습니다."
+    validations:
+      required: true
