@@ -16,7 +16,8 @@ atomicity, visibility와 happens-before 관계로 설명합니다.
    정의하며, happens-before 관계가 그 판단 기준이 됩니다.
 4. `synchronized`는 같은 monitor를 사용하는 구간에 mutual exclusion을 제공하고 unlock 이후의
    변경이 다음 lock에 보이도록 합니다.
-5. `volatile`은 해당 변수의 visibility와 ordering을 보장하지만 `count++` 전체를 atomic하게
+5. 같은 변수에 대한 volatile write는 이후 volatile read보다 happens-before입니다. 이 관계는
+   write 이전 변경의 visibility와 관련 재배치 제한을 제공하지만 `count++` 전체를 atomic하게
    만들지는 않으므로, 복합 연산에는 lock이나 atomic class가 필요합니다.
 
 ## 필수 키워드
@@ -31,7 +32,8 @@ atomicity, visibility와 happens-before 관계로 설명합니다.
 
 - 실행 순서 문제와 다른 Thread의 변경을 보지 못하는 문제를 구분합니다.
 - `count++`의 read-modify-write 단계를 이용해 변경 유실을 설명합니다.
-- `synchronized`, `volatile`과 atomic class가 각각 보장하는 범위를 비교합니다.
+- `synchronized`, volatile write-read happens-before와 atomic class가 각각 보장하는 범위를
+  비교합니다.
 
 ## 이번 주 제외 범위
 
