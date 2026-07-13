@@ -44,9 +44,9 @@
 
 ## 참여자
 
-| GitHub | 역할 | 상태 |
+| GitHub | 블로그 | 개인 레포지토리 |
 |---|---|---|
-| [@co2plant](https://github.com/co2plant) | 스터디장 | 참여 확정 |
+| [@co2plant](https://github.com/co2plant) | [co2plant의 기술 블로그](co2plant.clouud) | - |
 
 다른 참여자는 본인에게 공개 여부와 GitHub 계정을 확인한 뒤 추가합니다. `참여 확정` 상태인
 사람만 랜덤 발표·면접 순환 후보에 포함합니다.
